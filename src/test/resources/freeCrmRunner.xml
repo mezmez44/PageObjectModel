@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FREE CRM Automation Script" parallel="false">
+
+<listeners>
+    <listener class-name="ExtentReportListener.ExtentReportListener"></listener>
+</listeners>
+    <test name="freeCrm Home">
+<!--        <parameter name="useCloudEnv" value="false"/>-->
+<!--        <parameter name="cloudEnvName" value="browserstack"/>-->
+<!--        &lt;!&ndash;<parameter name="cloudEnvName" value="saucelab"/>&ndash;&gt;-->
+<!--        <parameter name="os" value="windows"/>-->
+<!--        &lt;!&ndash;<parameter name="os" value="OS X"/>&ndash;&gt;-->
+<!--        <parameter name="os_version" value="10"/>-->
+<!--        &lt;!&ndash;<parameter name="os_version" value="Sierra"/>&ndash;&gt;-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <parameter name="browserVersion" value="79"/>-->
+<!--        <parameter name="url" value="https://www.jQueryui.com/"/>-->
+        <classes>
+            <class name="testCases.LoginPageTest"/>
+            <class name="testCases.HomePageTest"/>
+            <class name="testCases.ContactsPageTest"/>
+        </classes>
+
+    </test>
+</suite>
